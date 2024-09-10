@@ -1,0 +1,33 @@
+@import "./vars";
+
+.header__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $header-bg;
+
+    .header__container--title {
+        h1 {
+            color: $default-text-color;
+        }
+    }
+    .header__container--nav {
+        width: 30%;
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            li {
+                color: $default-text-color;
+            }
+        }
+    }
+    .header__container--cart {
+        .fa-solid {
+            color: $default-text-color;
+            span {
+                color: $default-text-color;
+            }
+        }
+    }
+}

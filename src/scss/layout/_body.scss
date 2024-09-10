@@ -1,0 +1,23 @@
+body {
+    display: grid;
+    grid-template-rows: 100px auto 200px;
+    grid-template-areas: 
+      "header" 
+      "main" 
+      "footer";
+      
+    #root {
+        .header__container {
+            grid-area: header;
+            height: 100px;
+        }
+    
+        .main__container {
+            grid-area: main;
+    
+        }
+        .footer__container {
+            grid-area: footer;
+        }
+    }
+}

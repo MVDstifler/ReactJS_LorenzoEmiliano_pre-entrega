@@ -1,0 +1,50 @@
+body {
+  display: grid;
+  grid-template-rows: 100px auto 200px;
+  grid-template-areas: "header" "main" "footer";
+}
+body #root .header__container {
+  grid-area: header;
+  height: 100px;
+}
+body #root .main__container {
+  grid-area: main;
+}
+body #root .footer__container {
+  grid-area: footer;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #17202A;
+}
+.header__container .header__container--title h1 {
+  color: #D5D8DC;
+}
+.header__container .header__container--nav {
+  width: 30%;
+}
+.header__container .header__container--nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.header__container .header__container--nav ul li {
+  color: #D5D8DC;
+}
+.header__container .header__container--cart .fa-solid {
+  color: #D5D8DC;
+}
+.header__container .header__container--cart .fa-solid span {
+  color: #D5D8DC;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=index.css.map */
