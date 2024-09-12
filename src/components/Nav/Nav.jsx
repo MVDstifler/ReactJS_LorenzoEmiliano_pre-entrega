@@ -5,11 +5,11 @@ export default function Nav(props) {
         <>
         <nav class="header__container--nav">
             <ul> 
-                <Menus option="Plataformas"/>
-                <Menus option="Videojuegos"/>
-                <Menus option="Accesorios"/>
-                <Menus option="Torneos"/>
-                <Menus option="Nosotros"/>
+                <Menus option="Autos"/>
+                <Menus option="Motos"/>
+                <Menus option="Repuestos"/>
+                <Menus option="Asesoramiento"/>
+                <Menus option="Contacto"/>
             </ul>
         </nav>
         </>
