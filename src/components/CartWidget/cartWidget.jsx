@@ -1,6 +1,4 @@
-import React from "react";
-import Nav from "../Nav/Nav";
-
+import React from 'react';
 import { FaShoppingCart } from 'react-icons/fa'; // Font Awesome shopping cart icon
 
 const CartWidget = ({ cartCount }) => {
@@ -26,3 +24,4 @@ const CartWidget = ({ cartCount }) => {
 };
 
 export default CartWidget;
+

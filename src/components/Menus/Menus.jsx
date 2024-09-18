@@ -1,9 +1,11 @@
+import React from 'react';
 
-
-export default function Menus(props) {
+export default function Menus({ option, onClick }) {
     return (
-        <>
-         <li>{props.option}</li>
-        </>
-    )
+        <li className="menu-item">
+            <button onClick={onClick} className="menu-button">
+                {option}
+            </button>
+        </li>
+    );
 }

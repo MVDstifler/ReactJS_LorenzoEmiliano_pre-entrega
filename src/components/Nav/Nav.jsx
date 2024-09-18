@@ -1,17 +1,21 @@
-import Menus from "../Menus/Menus";
+import React from 'react';
+import CartWidget from '../CartWidget/cartWidget';
+import Menus from '../Menus/Menus';
 
-export default function Nav(props) {
-    return (
-        <>
-        <nav class="header__container--nav">
-            <ul> 
-                <Menus option="Autos"/>
-                <Menus option="Motos"/>
-                <Menus option="Repuestos"/>
-                <Menus option="Asesoramiento"/>
-                <Menus option="Contacto"/>
-            </ul>
-        </nav>
-        </>
-    )
+export default function Navbar() {
+  const cartCount = 5; 
+
+  return (
+    <nav className="header__container--nav">
+      <ul>
+        <li><Menus option="Inicio" /></li>
+        <li><Menus option="Autos" /></li>
+        <li><Menus option="Motos" /></li>
+        <li><Menus option="Repuestos" /></li>
+        <li><Menus option="Asesoramiento" /></li>
+        <li><Menus option="Contacto" /></li>
+      </ul>
+      <CartWidget cartCount={cartCount} /> {/* Añade el CartWidget aquí */}
+    </nav>
+  );
 }

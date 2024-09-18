@@ -1,15 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Cart from './components/Cart/Cart'
-import CartWidget from './components/CartWidget/cartWidget'
-import Menus from './components/Menus/Menus'
 import Nav from './components/Nav/Nav'
-import Title from './components/Title/Title'
-import { useState } from 'react'
-import TaskList from './components/TaskList/TaskList'
-
 
 
   // Función para marcar una tarea como completada
