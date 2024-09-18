@@ -15,7 +15,7 @@ export default function Navbar() {
         <li><Menus option="Asesoramiento" /></li>
         <li><Menus option="Contacto" /></li>
       </ul>
-      <CartWidget cartCount={cartCount} /> {/* Añade el CartWidget aquí */}
+      <CartWidget cartCount={cartCount} /> {}
     </nav>
   );
 }
