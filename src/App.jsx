@@ -17,16 +17,17 @@ function App() {
       <header className="header__container">
         <Title title="Montevideo Cars" />
         <Nav />
-        <Cart count={count} /> {5}
+        <Cart count={count} />
       </header>
       <main className="main__container">
-        <ItemListContainer items={items} greeting={greeting} /> {Bienvenido}
+        <ItemListContainer items={items} greeting={greeting} />
       </main>
       <footer className="footer__container">
-        {'footer content'}
+        Footer content
       </footer>
     </>
   );
 }
 
 export default App;
+
