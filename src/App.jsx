@@ -3,9 +3,9 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import ItemListContainer from './components/ItemListContainer'; 
-import Title from './components/Title'; // Ajuste aquí
+import Title from './components/Title'; 
 import Cart from './components/Cart';  
-import Autos from './components/Autos'; // Asegúrate de importar los componentes que faltan
+import Autos from './components/Autos'; 
 import Motos from './components/Motos';
 import Repuestos from './components/Repuestos';
 import Asesoramiento from './components/Asesoramiento';
