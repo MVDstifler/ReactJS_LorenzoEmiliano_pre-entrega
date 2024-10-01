@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useState } from "react";
+import { Link } from "react-router-dom"; 
 
 const ItemListContainer = ({ items, greeting }) => {
   return (
@@ -7,8 +7,10 @@ const ItemListContainer = ({ items, greeting }) => {
       <h1>{greeting}</h1>
       <h2>Item List</h2>
       <ul>
-        {items.map((item, index) => (
-          <li key={index}>{item}</li>
+        {items.map((item) => (
+          <li key={item.id}> 
+            <Link to={`/item/${item.id}`}>{item.name}</Link> 
+          </li>
         ))}
       </ul>
     </div>

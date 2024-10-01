@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'; 
+import { Link } from 'react-router-dom';
 
 export default function ProductCard({ product }) {
   return (
@@ -14,6 +15,7 @@ export default function ProductCard({ product }) {
       <img style={{ width: 80 }} src={product.image} alt={product.title} />
       <p>Category: {product.category}</p>
       <p>Price: {product.price}</p>
+      <Link to={`/item/${product.id}`}>Ver detalles</Link>
       <button onClick={() => alert(`Buying ${product.title}`)}>Buy</button>
     </article>
   );
