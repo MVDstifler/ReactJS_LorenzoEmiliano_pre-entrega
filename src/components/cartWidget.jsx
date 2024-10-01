@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaShoppingCart } from 'react-icons/fa'; // Font Awesome shopping cart icon
+import { FaShoppingCart } from 'react-icons/fa'; 
 
 const CartWidget = ({ cartCount }) => {
   return (
@@ -24,4 +24,3 @@ const CartWidget = ({ cartCount }) => {
 };
 
 export default CartWidget;
-

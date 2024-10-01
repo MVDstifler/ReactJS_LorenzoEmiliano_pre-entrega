@@ -1,10 +1,10 @@
 import React from "react";
-import Nav from "../Nav/Nav";
+import { useEffect, useState } from "react";
 
 const ItemListContainer = ({ items, greeting }) => {
   return (
     <div>
-      <h1>{greeting}</h1> {}
+      <h1>{greeting}</h1>
       <h2>Item List</h2>
       <ul>
         {items.map((item, index) => (
