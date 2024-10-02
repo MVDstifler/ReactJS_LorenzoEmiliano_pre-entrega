@@ -1,21 +1,13 @@
 import React from 'react';
 import { FaShoppingCart } from 'react-icons/fa'; 
+import './CartWidget.css'; // Asegúrate de que la ruta sea correcta
 
 const CartWidget = ({ cartCount }) => {
   return (
-    <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
+    <div className="cart-widget" aria-label="Cart">
       <FaShoppingCart size={24} />
       {cartCount > 0 && (
-        <span
-          style={{
-            marginLeft: '8px',
-            backgroundColor: '#ff6347',
-            color: 'white',
-            borderRadius: '50%',
-            padding: '4px 8px',
-            fontSize: '12px',
-          }}
-        >
+        <span className="cart-count">
           {cartCount}
         </span>
       )}

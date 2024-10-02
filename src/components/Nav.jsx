@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
-import CartWidget from '../CartWidget/cartWidget';
-import Menus from '../Menus/Menus';
+import CartWidget from './CartWidget'; 
+import Menus from './Menus';
 
 export default function Navbar() {
   const cartCount = 5; 
