@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import ItemListContainer from './components/ItemListContainer'; 
+import ItemDetailContainer from './components/ItemDetailContainer';
 import Title from './components/Title'; 
 import Cart from './components/Cart';  
 import Autos from './components/Autos'; 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaShoppingCart } from 'react-icons/fa'; 
-import './CartWidget.css'; // Asegúrate de que la ruta sea correcta
+import './CartWidget.css'; 
 
 const CartWidget = ({ cartCount }) => {
   return (
