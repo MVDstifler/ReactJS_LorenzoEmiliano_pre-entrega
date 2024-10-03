@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import ItemDetail from './ItemDetail'; 
 import { fetchItemById } from './api'; 
-import { fetchItemDetails } from '../api'; 
-
-
 
 const ItemDetailContainer = () => {
-  const { id } = useParams();
+  const { id } = useParams(); 
   const [item, setItem] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -31,10 +29,8 @@ const ItemDetailContainer = () => {
 
   return (
     <div>
-      <h2>{item.name}</h2>
-      <p>{item.description}</p>
-      <p>Precio: ${item.price}</p>
-      <img src={item.image} alt={item.name} />
+      {}
+      <ItemDetail product={item} />
     </div>
   );
 };
