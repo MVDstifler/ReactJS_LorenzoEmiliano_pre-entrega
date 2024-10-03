@@ -14,8 +14,9 @@ export default function Navbar() {
     <li><Link to="/category/autos"><Menus option="Autos" /></Link></li>
     <li><Link to="/category/motos"><Menus option="Motos" /></Link></li>
     <li><Link to="/category/repuestos"><Menus option="Repuestos" /></Link></li>
-    <li><Link to="/category/asesoramiento"><Menus option="Asesoramiento" /></Link></li>
-    <li><Link to="/category/contacto"><Menus option="Contacto" /></Link></li>
+    <li><Link to="/asesoramiento"><Menus option="Asesoramiento" /></Link></li>
+    <li><Link to="/contacto"><Menus option="Contacto" /></Link></li>
+
   </ul>
   <CartWidget cartCount={cartCount} />
 </nav>

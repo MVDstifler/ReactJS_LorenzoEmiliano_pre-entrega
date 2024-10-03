@@ -11,7 +11,6 @@ import Motos from './components/Motos';
 import Repuestos from './components/Repuestos';
 import Asesoramiento from './components/Asesoramiento';
 import Contacto from './components/Contacto';
-import ProductDetail from './components/ProductDetail';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -37,7 +36,6 @@ function App() {
           <Route path="/repuestos" element={<Repuestos />} />
           <Route path="/asesoramiento" element={<Asesoramiento />} />
           <Route path="/contacto" element={<Contacto />} />
-          <Route path="/producto/:id" element={<ProductDetail />} />
         </Routes>
       </main>
 
