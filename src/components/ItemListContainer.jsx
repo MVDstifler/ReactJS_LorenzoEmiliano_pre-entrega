@@ -1,19 +1,34 @@
-import React from "react";
-import { Link } from "react-router-dom"; 
+import React, { useEffect, useState } from 'react';
+import ItemList from './ItemList';
+import { useParams } from 'react-router-dom';
+import { fetchItems } from './fetchItems';  
 
+const ItemListContainer = ({ greeting }) => {
+  const { categoryId } = useParams();  
+  const [items, setItems] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-const ItemListContainer = ({ items, greeting }) => {
+  useEffect(() => {
+    setLoading(true);
+    fetchItems(categoryId)
+      .then((fetchedItems) => {
+        setItems(fetchedItems);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching items:", error);
+        setLoading(false);
+      });
+  }, [categoryId]);
+
+  if (loading) {
+    return <p>Cargando productos...</p>;
+  }
+
   return (
     <div>
       <h1>{greeting}</h1>
-      <h2>Item List</h2>
-      <ul>
-        {items.map((item) => (
-          <li key={item.id}> 
-            <Link to={`/item/${item.id}`}>{item.name}</Link> 
-          </li>
-        ))}
-      </ul>
+      <ItemList items={items} />
     </div>
   );
 };
