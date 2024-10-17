@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const ItemDetail = ({ product }) => {
+const ItemDetail = ({ item }) => {
+  const [quantity, setQuantity] = useState(1);
+
+  const handleAddToCart = () => {
+    // Lógica para agregar al carrito
+  };
+
   return (
-    <div style={{ border: '1px solid #ccc', padding: '20px', borderRadius: '10px', maxWidth: '400px', margin: '20px auto' }}>
-      <h2>{product.title}</h2>
-      <img src={product.image} alt={product.title} style={{ width: '100%', borderRadius: '10px' }} />
-      <p>{product.description}</p>
-      <p>Category: {product.category}</p>
-      <p>Price: ${product.price}</p>
-      <button style={{ padding: '10px 20px', backgroundColor: '#007bff', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
-        Add to Cart
-      </button>
+    <div>
+      <img src={item.image} alt={item.name} />
+      <h2>{item.name}</h2>
+      <p>{item.description}</p>
+      <p>${item.price}</p>
+      <ItemQuantitySelector quantity={quantity} setQuantity={setQuantity} />
+      <button onClick={handleAddToCart}>Agregar al carrito</button>
     </div>
   );
 };
